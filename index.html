@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="assets/images/hackers-poulette-logo.png" alt="">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <img src="assets/images/hackers-poulette-logo.png" alt="hackers poulette logo">
     </header>
 
     <main>
-        <h4>Send e-mail</h4>
         <form class="contact-form" method="post" action="contactform.php">
-            <input type="text" name="name" placeholder="Full name">
-            <input type="radio" name="gender" id="male" value="male">Male
-            <input type="radio" name="gender" id="female" value="female">Female
-            <input type="email" name="mail" id="email" placeholder="Your e-mail">
-            <input type="text" name="country" placeholder="Country">
-            <select name="subject" id="subject">
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-                <option value="canada">Canada</option>
-                <option value="other">Other</option>
-            </select>
-            <textarea name="message" id="message" rows="4" cols="50" placeholder="Type your message!"></textarea>
+            <h2>Send e-mail</h2>
+            <hr>
+            <section class="container">
+                <input class="contact-input" type="text" name="name" placeholder="Full name" required>
+                <section class="gender">
+                    <input type="radio" name="gender" id="male" value="male"> Male
+                    <input type="radio" name="gender" id="female" value="female"> Female
+                </section>
+                <input class="contact-input" type="email" name="mail" placeholder="Your e-mail" required>
+                <input class="contact-input" type="text" name="country" placeholder="Country" required>
+                <select class="contact-input" name="subject" id="subject">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="maroc">Maroc</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea name="message" rows="4" cols="50" placeholder="Type your message!" required></textarea>
+            </section>
             <button type="submit" name="submit">Send e-mail</button>
         </form>
     </main>
 
-    <footer>
-
-    </footer>
 </body>
 </html>

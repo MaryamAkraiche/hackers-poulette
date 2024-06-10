@@ -1,22 +1,65 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: lighter;
+    box-sizing: border-box;
+    font-family: 'Outfit';
 }
 body{
-    header{
+    display: flex;
+    main{
+        height: 100vh;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        img{
-            width: 200px;
+        justify-content: space-evenly;
+    }
+    .contact-form{
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        h2{
+            font-weight: 600;
+            font-size: 40px;
+            color: #15c5bd;
         }
-        a{
-            text-decoration: none;
-            justify-content: space-between;
-            color: black;
-            
+        hr{
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: #15c5bd;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
+        .contact-input{
+            width: 400px;
+            height: 40px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            border-radius: 50px;
+            background-color: #e7f3f2;
+            margin: 10px 0;
+            &:focus{
+                border: 2px solid #15c5bd;
+            }
+        }
+        textarea{
+            width: 400px;
+            height: 140px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+        button{
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
     }
 }
