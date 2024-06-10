@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="assets/images/hackers-poulette-logo.png" alt="">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h4>Send e-mail</h4>
+        <form class="contact-form" method="post" action="contactform.php">
+            <input type="text" name="name" placeholder="Full name">
+            <input type="radio" name="gender" id="male" value="male">Male
+            <input type="radio" name="gender" id="female" value="female">Female
+            <input type="email" name="mail" id="email" placeholder="Your e-mail">
+            <input type="text" name="country" placeholder="Country">
+            <select name="subject" id="subject">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="canada">Canada</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="message" id="message" rows="4" cols="50" placeholder="Type your message!"></textarea>
+            <button type="submit" name="submit">Send e-mail</button>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
