@@ -2,17 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Outfit";
+  font-family: "bellota";
 }
 
 body {
   display: flex;
+  background-color: #f4fffd;
+}
+body header img {
+  margin-top: 20px;
+  width: 45rem;
 }
 body main {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 body .contact-form {
   align-items: start;
@@ -23,34 +28,35 @@ body .contact-form {
 body .contact-form h2 {
   font-weight: 600;
   font-size: 40px;
-  color: #15c5bd;
+  color: #0D8187;
 }
 body .contact-form hr {
   border: none;
   width: 120px;
   height: 5px;
-  background-color: #15c5bd;
+  background-color: #0D8187;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 body .contact-form .contact-input {
   width: 400px;
   height: 40px;
   border: none;
   outline: none;
-  padding-left: 25px;
+  padding-left: 20px;
   font-weight: 500;
   border-radius: 50px;
   background-color: #e7f3f2;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 body .contact-form .contact-input:focus {
-  border: 2px solid #15c5bd;
+  border: 2px solid #0D8187;
 }
 body .contact-form textarea {
   width: 400px;
-  height: 140px;
+  height: 100px;
   padding-top: 15px;
+  padding-left: 15px;
   border-radius: 20px;
 }
 body .contact-form button {
@@ -62,4 +68,5 @@ body .contact-form button {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  background: linear-gradient(270deg, #44A08D, #093637);
 }/*# sourceMappingURL=styles.css.map */
